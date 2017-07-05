@@ -1,0 +1,210 @@
+
+section, footer, h1, div {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+header {
+    background-color: grey;
+}
+
+nav {
+    background-color: olivedrab;
+    height: 70px;
+}
+
+
+.menu-ul {
+    list-style-type: none;
+}
+
+.menu-ul li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top:20px;
+    margin-bottom: auto;
+}
+
+li a:hover {
+    color:purple;
+}
+
+
+h1 {
+    background-color: palegreen;
+    color: peru;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+h2 {
+    /*width: 20%;*/
+    text-decoration: underline;
+    font-size: 18px; 
+}
+
+
+#table-section ul li {
+    list-style-type: disc;
+}
+
+
+#list-section ul li {
+    list-style-type: disc;
+}
+
+#circle-bullet ul li{
+    list-style-type: circle;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    padding: 10px;
+}
+table {
+    margin-left: 20px;
+    border: 1px dotted black;
+    /*border-collapse: collapse;*/
+    /*border-spacing: 20px;*/
+    width: 500px;
+}
+
+th {
+    background-color: palevioletred;
+    padding: 10px;
+}
+.second {
+    background-color: pink;
+}
+
+td {
+    padding: 5px;
+}
+
+.row1 {
+    background: -webkit-gradient(linear, left top, right bottom, from(#2c4f05), to(#7be00b));
+   
+}
+
+.row2 {
+    background: -webkit-gradient(linear, left top, right bottom, from(#e29314), to(#efc47f));
+   
+}
+figcaption {
+    margin: 10px;
+
+}
+
+footer {
+    margin-bottom: 30px;
+}
+
+aside {
+    width: 400px;
+    height: 300px;
+    background-color: palegoldenrod;
+    float: right;
+    margin:50px 20px 0 auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/*This is for Contact page*/
+.back {
+    
+    font-weight: bold;
+    width: 50px;
+}
+
+h3 {
+    background-color: palegoldenrod;
+    color:gray;
+}
+
+/*this is for my message style*/
+#writeToUs #message{
+    width: 600px;
+    background-color: brown;
+}
+
+/*This is to display form like a table*/
+form {
+    display: table;
+}
+
+form div {
+    display: table-row;
+}
+
+form label, form input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+form label {
+    width: 200px;
+    padding-right: 5%;
+    text-align: right;
+}
+
+.gender {
+    width: 10px;
+}
+form input {
+    width: 250px;
+}
+
+
+
+
+
+/*This is for input validation*/
+input[type=email]{
+    -webkit-appearance: none;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input.invalid {
+    box-shadow: 0 0 5px 1px red
+}
+
+
+/* this is the style of our eror message*/
+.errorName{
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: red;
+  border-radius: 0 0 5px 5px;
+
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.errorName.active {
+  padding: 0.3em;
+}
+
+/*this is for SVG*/
+circle:hover {
+    fill-opacity: 0.9;
+}
+
+g {
+    fill-opacity: 0.7;
+}
+
