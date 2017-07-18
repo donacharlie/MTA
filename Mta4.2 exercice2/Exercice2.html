@@ -1,0 +1,56 @@
+<DOCTYPE! html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            
+            p {
+            margin-left: 10px;
+            color: red;
+            width: 500px;
+            height: 50px;
+            padding-top: 70px;
+            font-size: 14px;
+            }
+            input {
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                width: 350px;
+                height: 150px;
+            }
+           
+        </style>
+        <script rel="text" type="text/javascript" src="jquery-3.2.0.min.js"></script>
+        <script type="text/javascript">
+            //display coords of the mouse when button clicked
+            
+            function myfunction() {
+                $("button").click(function(event){
+                        var newWidth = $('textarea').css(width) + 10;
+                        var newHeight = $('textarea').css(height) + 10;
+                        $("textarea").width(newWidth);
+                        $("textarea").height(newHeight);
+                }); 
+            }   
+
+            //without jquery:
+            /*var currentCols = document.getElementById("myTextarea").getAttributes("cols");
+            var currentRows = document.getElementById("myTextarea").getAttributes("rows");
+                
+            function myFunction() {
+                var newCols = currentCols + 10;
+                var newRows = currentRowst + 10;
+                document.getElementById("myTextarea").cols = newCols;
+                document.getElementById("myTextarea").rows = newRows;
+            }
+*/
+        </script>
+    </head>
+    <body>
+        <h1>This is the exercice 1</h1>
+        <p>Each time the button is pressed the text area is augmented with the content of the input.</p>
+        <input id="myButton" type="button" value="Click me" onclick="myFunction();"/>
+        <br/>
+        <textarea id="myTextarea"></textarea>
+    </body>
