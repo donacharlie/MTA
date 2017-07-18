@@ -15,27 +15,36 @@
                 margin-bottom: 20px;
             }
 
-            textarea {
+            /*textarea {
                 width: 350px;
                 height: 150px;
-            }
+            }*/
            
         </style>
         <script rel="text" type="text/javascript" src="jquery-3.2.0.min.js"></script>
         <script type="text/javascript">
             //display coords of the mouse when button clicked
+            //uncomment css textarea first and remove cols and rows in html
             
-            function myfunction() {
-                $("button").click(function(event){
-                        var newWidth = $('textarea').css(width) + 10;
-                        var newHeight = $('textarea').css(height) + 10;
-                        $("textarea").width(newWidth);
-                        $("textarea").height(newHeight);
-                }); 
-            }   
+            /*$(document).ready(function(){
+                
+                var newWidth = $('textarea').css("width") + 10;
+                var newHeight = $('textarea').css("height") + 10;
+                function myFunction() {
+                    $("textarea").width(newWidth);
+                    $("textarea").height(newHeight);
+                }
+                myFunction();
+            });*/
+            
+            
+        
+                    
+                    
 
-            //without jquery:
-            /*var currentCols = document.getElementById("myTextarea").getAttributes("cols");
+            //without jquery  
+            //add cols and rows in input comment css textarea
+            var currentCols = document.getElementById("myTextarea").getAttributes("cols");
             var currentRows = document.getElementById("myTextarea").getAttributes("rows");
                 
             function myFunction() {
@@ -44,13 +53,13 @@
                 document.getElementById("myTextarea").cols = newCols;
                 document.getElementById("myTextarea").rows = newRows;
             }
-*/
+
         </script>
     </head>
     <body>
         <h1>This is the exercice 1</h1>
         <p>Each time the button is pressed the text area is augmented with the content of the input.</p>
-        <input id="myButton" type="button" value="Click me" onclick="myFunction();"/>
+        <input id="myButton" type="button" value="Click me" cols="30" rows="50" onclick="myFunction();"/>
         <br/>
         <textarea id="myTextarea"></textarea>
     </body>
