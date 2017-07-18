@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+<head>
+    <style>
+        #data-source {
+            -ms-flow-into: flow1;
+        }
+        .flow-container {
+            -ms-flow-from: flow1;
+        }
+        #grid {
+            display: -ms-grid;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr;
+            -ms-grid-rows: 384px 384px;
+        }
+        .A {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-row-span: 2;
+        }
+        .B {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        }
+        .C {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+        }
+        .D {
+            -ms-grid-row: 1;
+            -ms-grid-column: 4;
+        }
+        .E {
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 3;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="data-source" src="content.html"></iframe>
+    <div id="grid">
+        <div id="region1" class="A flow-container"></div> 
+        <div id="region2" class="B flow-container"></div>
+        <div id="region3" class="C flow-container"></div> 
+        <div id="region4" class="D flow-container"></div>
+        <img class="E" src="image.png" />  
+    </div>
+</body>

@@ -1,0 +1,27 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <style>
+            #content {
+                -webkit-flow-into: main;
+            }
+
+            .region {
+                -webkit-flow-from: main;
+                -webkit-region-fragment: auto;
+                background: #9ACD32;
+                width: 150px;
+                height: 200px;
+                float: left;
+                margin: 20px;
+            }
+            </style>
+        </head>
+        <body>
+            <iframe id="content" scr="content-source.html"></iframe>
+            <div id="region1" class="region"></div>
+            <div id="region2" class="region"></div>
+            <div id="region3" class="region"></div>
+            <div id="region4" class="region"></div>
+        </body>
+    </html>

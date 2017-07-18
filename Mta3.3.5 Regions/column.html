@@ -1,0 +1,61 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+    <style>
+        .threeColumns {
+            
+            -webkit-column-count: 3;
+            column-count: 3;
+            hyphens: auto;
+        }
+        
+        .container {
+           
+            display: -ms-grid;
+            -ms-grid-columns: 1fr 1fr 1fr;
+            -ms-grid-rows: 1fr 1fr 1fr;
+        }
+        .exclusion {
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+            background-color: lime;
+            -ms-wrap-flow: both;
+            padding: 10px;
+            -ms-wrap-margin: 15px;
+        }
+
+        .pexclu {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 3;
+            -ms-grid-row-span: 3;
+        }
+    </style>
+</head>
+
+<body>
+<h2>Three Columns</h2>
+<div class="threeColumns">
+    <p>Lorem ipsum dolor sit amet, cons-ectetur adipiscing elit. Duis vel tristique arcu.
+     Praesent a ante quis nibh accumsan tempor. Curabitur pellentesque risus nibh, 
+     in ornare dolor vulputate vel. Proin id augue maximus, condimentum sapien a, 
+     elementum turpis. Phasellus mauris-tellus, posuere in mauris eget, auctor pretium nulla.</p>
+     <p>Donec id interdum metus, iaculis imperdiet mi. In iaculis odio libero, non placerat diam 
+     semper sed. Ut turpis turpis, venenatis id sem ac, tempor scelerisque enim. Donec 
+     ullamcorper odio ipsum, non vestibulum est consectetur id. Pellentesque et sollicitudin elit. 
+     Donec et erat non augue finibus posuere.</p> 
+     <p>Suspendisse auctor turpis id dignissim finibus. 
+     Quisque finibus mi vel ligula mollis, nec congue urna euismod. Nulla tincidunt mauris felis, 
+     vel accumsan nisi fermentum sed. Vestibulum interdum nisl sed mi tempus posuere. Sed efficitur 
+     urna orci.</p>
+</div>
+<div class="container">
+    <div class="exclusion"></div>
+    <p class="pexclu">Lorem ipsum dolor sit amet, cons-ectetur adipiscing elit. Duis vel tristique arcu.
+     Praesent a ante quis nibh accumsan tempor. Curabitur pellentesque risus nibh, 
+     in ornare dolor vulputate vel. Proin id augue maximus, condimentum sapien a, 
+     elementum turpis. Phasellus mauris-tellus, posuere in mauris eget, auctor pretium nulla.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS3 Exclusions Sample</title>
+  <style type="text/css">
+    .container {
+      font-size: small;
+      width: 98%;
+      height: 100%;
+      display: -ms-grid;
+      ms-grid-columns: 1fr 1fr 1fr;
+      ms-grid-rows: 1fr 1fr 1fr;
+    }
+    .exclusion {
+      -ms-grid-row: 2;
+      -ms-grid-column: 2;
+      background-color: lime;
+      -ms-wrap-flow: both;
+      padding: 10px;
+      -ms-wrap-margin: 15px;
+    }
+    .dummy_text {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row-span: 3;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="body">
+    <h1>CSS3 Exclusions Sample</h1>
+    <div class="container">
+      <div class="exclusion">
+        Exclusion positioned at row 2, column 2.
+      </div>
+      <div class="dummy_text">
+        <p>Lorem ipsum dolor sit amet, cons-ectetur adipiscing elit. Duis vel tristique arcu.
+        Praesent a ante quis nibh accumsan tempor. Curabitur pellentesque risus nibh, 
+        in ornare dolor vulputate vel. Proin id augue maximus, condimentum sapien a, elementum turpis. Phasellus mauris-tellus, posuere in mauris eget, auctor pretium nulla.
+        Donec id interdum metus, iaculis imperdiet mi. In iaculis odio libero, non placerat diam 
+        semper sed. Ut turpis turpis, venenatis id sem ac, tempor scelerisque enim. Donec 
+        ullamcorper odio ipsum, non vestibulum est consectetur id. Pellentesque et sollicitudin elit. 
+        Donec et erat non augue finibus posuere. 
+        Suspendisse auctor turpis id dignissim finibus. 
+        Quisque finibus mi vel ligula mollis, nec congue urna euismod. Nulla tincidunt mauris felis, 
+        vel accumsan nisi fermentum sed. Vestibulum interdum nisl sed mi tempus posuere. Sed efficitur 
+        urna orci.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
