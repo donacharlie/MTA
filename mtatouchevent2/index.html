@@ -1,0 +1,36 @@
+<DOCTYPE! html>
+<head>
+    <style>
+        #coords {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: solid green 5px;
+            border-radius: 0px 15px 30px;
+        }
+
+        
+    </style>
+</head>
+<body onload="init()">
+    <canvas id="myCanvas" width="662" height="373" style="border: solid 1px #ccc">Canvas element not supported <br />
+    </canvas>
+    
+    <script>
+        function init() {
+            // Get a reference to our touch-sensitive element
+            var touchzone = document.getElementById("myCanvas");
+            // Add an event handler for the touchstart event
+            touchzone.addEventListener("touchstart", draw, flase);
+        }
+
+        function draw(){
+            var canvas = document.getElementById("mycanvas");
+
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                ctx.fillRect (event.touches[0].pageX, event.touche[0].pageY, 5, 5);
+            }
+        }
+    </script>
+</body>
