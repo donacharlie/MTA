@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+<head>
+    <style>
+        #coords {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: solid green 5px;
+            border-radius: 0px 15px 30px;
+        }
+
+        #touchzone {
+            background-color: palegreen;
+            margin: 50px;
+            width: 90%;
+            height: 600px;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="coords"></div>
+    <center> <div id ="touchzone">Touch here</div></center>
+    
+    <script>
+        function init() {
+            // Get a reference to our touch-sensitive element
+            var touchzone = document.getElementById("touchzone");
+            // Add an event handler for the touchstart event
+            touchzone.addEventListener("touchstart", touchHandler, flase);
+        }
+
+        function touchHandler(event) {
+            // Get a reference to our coordinates div
+            var coords =document.getElementById("coords");
+            // Write the coordinates of the touch to the div
+            coords.innerHTML = 'x: ' + event.touches[0].pageX + 'y: ' + event.touches[0].pageY;
+        }
+    </script>
+</body>
